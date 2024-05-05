@@ -16,7 +16,7 @@ client.help((ctx) =>{
 })
 
 // Commands
-client.command(['CI', 'Ci', 'ci'], (ctx) => ciSearch(ctx));
+client.command(['CI', 'Ci', 'ci'], (ctx) => ciSearch(ctx)); 
 
 //ping!
 client.command(['ping', 'Ping'], (ctx, msg) =>{
