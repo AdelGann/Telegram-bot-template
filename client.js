@@ -7,7 +7,7 @@ const guessNumber = require('./src/commands/utilities/guessNumber.js')
 
 client.start((ctx) => {
     ctx.reply(`Hola!!! ${ctx.from.first_name}`)
-    ctx.reply(variable.startMsg[Math.floor(Math.random()*(2 - 0 + 1)+ 0)]);
+    ctx.reply(variable.startMsg);
 });
 
 //help
