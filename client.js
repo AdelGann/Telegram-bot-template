@@ -3,7 +3,7 @@ const config = require('./configs/config.js');
 const variable = require('./configs/variables.js')
 const client = new Telegraf(config.TOKEN);
 
-const ciSearch = require('./src/commands/utilities/ciSearch.js')
+const ciSearch = require('./src/commands/utilities/guessNumber.js')
 
 client.start((ctx) => {
     ctx.reply(`Hola!!! ${ctx.from.first_name}`)
@@ -16,7 +16,7 @@ client.help((ctx) =>{
 })
 
 // Commands
-client.command(['CI', 'Ci', 'ci'], (ctx) => ciSearch(ctx)); 
+client.command(['CI', 'Ci', 'ci'], (ctx) => guessNumber(ctx)); 
 
 //ping!
 client.command(['ping', 'Ping'], (ctx, msg) =>{
