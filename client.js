@@ -1,6 +1,6 @@
 const {Telegraf} = require("telegraf");
-const config = require('./config.js');
-const variable = require('./variables.js')
+const config = require('./configs/config.js');
+const variable = require('./configs/variables.js')
 const client = new Telegraf(config.TOKEN);
 
 const ciSearch = require('./src/commands/utilities/ciSearch.js')
